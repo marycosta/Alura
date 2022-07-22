@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="contact.css">
+    </head>
+    <header>
+
+    </header>
+    <body>
+        <form>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" class="input_pattern">
+            
+            <label for="email">Email</label>
+            <input type="text" id="email" class="input_pattern">
+
+            <label for="message">Message</label>
+            <textarea cols="70" rows="10" id="message" class="input_pattern"></textarea>
+
+            <div>
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="email-radio" class="input_pattern">Email</label>
+                
+    
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="telefone-radio" class="input_pattern">Telefone</label>
+                
+
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="whatsapp-radio" class="input_pattern">Whatsapp</label>
+                
+    
+                <input type="submit" value="Enviar formulário">
+            </div>
+        </form>
+    </body>
+</html>

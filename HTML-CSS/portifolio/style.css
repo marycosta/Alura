@@ -32,17 +32,21 @@ footer img{
 .itens_port li {
     border: 5px;
     border-radius: 20px;
-    border-style: dotted;
-    border-color:black ;
+    border-style: hidden;
     display: inline-block; 
     text-align:  center;
     margin: left 10px;
     line-break: auto;
-    opacity: 50%;
     background-color: aliceblue;
     vertical-align: top;
     margin-right: 5%;
+    padding: 5px;
+    margin: 50px;
 }
 .itens_port img{
     width: 50%;
+}
+
+.itens_port a:hover{
+    opacity: 50%;
 }
