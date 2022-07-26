@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="stye.css">
     </head>
     <header>
 
@@ -10,23 +11,30 @@
     <body>
         <form>
             <label for="nome">Nome</label>
-            <input type="text" id="nome" class="input_pattern">
+            <input type="text" id="nome" class="input_pattern" required placeholder="Nome Completo">
             
             <label for="email">Email</label>
-            <input type="text" id="email" class="input_pattern">
+            <input type="email" id="email" class="input_pattern" required placeholder="example@gmail.com">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input_pattern" required placeholder="(XX) XXXXX-XXXX">
 
             <label for="message">Message</label>
             <textarea cols="70" rows="10" id="message" class="input_pattern"></textarea>
 
             <div>
-                <label for="radio-email"><input type="radio" name="contato" value="email" id="email-radio" class="input_pattern">Email</label>
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="email-radio">Email</label><br>
                 
-    
-                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="telefone-radio" class="input_pattern">Telefone</label>
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="telefone-radio" >Telefone</label><br>
                 
-
-                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="whatsapp-radio" class="input_pattern">Whatsapp</label>
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="whatsapp-radio" >Whatsapp</label><br>
                 
+                <label for="select-horario" value="horario" id="horario">Horário</label>
+                <select class="input_pattern">
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select><br>
     
                 <input type="submit" value="Enviar formulário">
             </div>
