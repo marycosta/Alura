@@ -7,6 +7,8 @@ p {
     font-size: 20px;
 }
 header{
+    display: flex;
+    align-items: flex-start;
     margin-top: 0%;
     padding: 10px;
     background-color: white;
@@ -21,6 +23,7 @@ footer img{
     margin: 0;
 }
 .main{
+    display: flex;
     background: rgb(225,169,255);
     border-radius: 20px;
     background: linear-gradient(90deg, rgba(225,169,255,1) 0%, rgba(157,141,233,1) 46%, rgba(204,204,204,1) 100%);}
@@ -58,6 +61,11 @@ footer img{
     text-align: left;
 }
 .header_navbar{
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
     margin: 10px;
     position: relative;
 
